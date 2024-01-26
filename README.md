@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+## Routes
+
+The two pages can be found under these two URLs: `http://localhost:3000/parking` and `http://localhost:3000/tickets`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

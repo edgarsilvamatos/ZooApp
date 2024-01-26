@@ -12,7 +12,9 @@ const Parking = () => {
       </div>
       <div className='info right-half'>
         <div className='parking-info'>
-        <h1>Free Parking Spaces:</h1>
+          <div className='title'>
+            <h1>Parking Spaces</h1>
+          </div>
         <hr/>
         <div className='circles'>
           <div className='left-half'>

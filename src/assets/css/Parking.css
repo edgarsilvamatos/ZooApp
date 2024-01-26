@@ -20,8 +20,9 @@ body, html {
     object-fit: cover; 
   }
 
+
   .parking-info {
-    padding: 2lvh
+    padding: 2lvh;
   }
 
   .left-half {
@@ -58,7 +59,9 @@ body, html {
 
   .circles {
     margin-top: 10lvh;
-    margin-left: 35lvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .p {
@@ -83,7 +86,6 @@ body, html {
   }
 
   h1 {
-    margin-left: -40vh;
     text-shadow: 2px 2px 4px white;
     color: black;
   }

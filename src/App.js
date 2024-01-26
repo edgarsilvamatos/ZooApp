@@ -9,7 +9,7 @@ import MobileParking from './components/MobileParking';
 const Nav = styled.nav`
   display: none;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 500px) {
     display: block;
   }
 `;
@@ -17,7 +17,7 @@ const Nav = styled.nav`
 const ParkingView = styled.div`
   display: block;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 500px) {
     display: none;
   }
 `;

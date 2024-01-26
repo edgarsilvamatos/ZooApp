@@ -7,9 +7,10 @@ import TicketIcon from '../assets/images/TicketIcon.png';
 
 const MobileParking = () => {
   return (
-    <div>
+    <div className='everything'>
         <div className='mobileAvailable'>
         <div className='mobilecircles'>
+
           <div className='left-half'>
           <div className='green-circle'></div>
           <p className='p'>&nbsp;Free: 23</p>

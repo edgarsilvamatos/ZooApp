@@ -1,35 +1,50 @@
 .navigation {
-    background-color: gray;
-    padding: 3lvh;
-    width: 35.12rem;
-    height: 12rem;
+  background-color: gray;
+  width: 37rem;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.everything {
+  width: 37rem;
 }
 
 .mobileAvailable {
-    width: 37rem;
-    background-color: gray;
-    height: 10.53rem;
+  width: 37rem;
+  background-color: gray;
+  height: 20rem;
 }
 
 .mobilepicture {
-    width: auto;
-    background-color: gray;
-    display: flex;
-  }
+  width: auto;
+  background-color: gray;
+  display: flex;
+}
 
-  .picturesize {
-    width: 37rem;
-    display: flex;
-  }
+.picturesize {
+  width: 37rem;
+  display: flex;
+}
 
-  .pictureIconSize {
-    width: 7rem;
-    float: left;
-    margin-left: 6rem;
-  }
+.pictureIconSize {
+  width: 7rem;
+  float: left;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 
-  .mobilecircles {
-    padding-top: 10lvh;
-    margin-left: 32lvh;
+.mobilecircles {
+  padding-top: 10lvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
+.p {
+  width: 10rem;
+  font-size: large;
+  justify-content: center;
+  align-items: center;
+}

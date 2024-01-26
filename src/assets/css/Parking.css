@@ -39,8 +39,8 @@ body, html {
   }
 
   .green-circle {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     background-color: green;
     border-radius: 50%;
     border: 2px solid black;
@@ -48,8 +48,8 @@ body, html {
   }
 
   .red-circle {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     background-color: red;
     border-radius: 50%;
     border: 2px solid black;
@@ -69,7 +69,6 @@ body, html {
   }
 
   .right-space {
-    margin-left: 5lvh;
     float: left;
   }
 

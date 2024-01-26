@@ -9,8 +9,8 @@ const MobileParking = () => {
   return (
     <div className='everything'>
         <div className='mobileAvailable'>
+          <h2>Parking Spaces</h2>
         <div className='mobilecircles'>
-
           <div className='left-half'>
           <div className='green-circle'></div>
           <p className='p'>&nbsp;Free: 23</p>

@@ -19,7 +19,9 @@ const TicketForm = () => {
     e.preventDefault();
     
     const newTicket = {
-      ...formFields,
+      date: formFields.date,
+      adultsCount: parseInt(formFields.adultsCount, 10),
+      childrenCount: parseInt(formFields.childrenCount, 10)
     };
 
     try {

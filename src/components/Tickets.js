@@ -73,19 +73,18 @@ const TicketForm = () => {
       />
       <br></br>
       <label>Anzahl Erwachsene:</label>
-      <div>
+      <div className='element'>
         <button className="button" onClick={() => handleInputChange('numAdults', Math.max(0, formFields.numAdults - 1))} disabled={formFields.numAdults === 0}>-</button>
-        <span>{formFields.numAdults}</span>
+        <br/>
+        <span className='nr'>{formFields.numAdults}</span>
         <button className="button" onClick={() => handleInputChange('numAdults', formFields.numAdults + 1)}>+</button>
-        <br></br>
       </div>
       <label>Anzahl Kinder:</label>
       <div>
         <button className="button" onClick={() => handleInputChange('numChildren', Math.max(0, formFields.numChildren - 1))} disabled={formFields.numChildren === 0}>-</button>
-        <span>{formFields.numChildren}</span>
+        <br/>
+        <span className='nr'>{formFields.numChildren}</span>
         <button className="button" onClick={() => handleInputChange('numChildren', formFields.numChildren + 1)}>+</button>
-        <br></br>
-        <br></br>
       </div>
       <br></br>
       <button className="buttonnavigation" onClick={handleSubmit}>Kaufen</button>

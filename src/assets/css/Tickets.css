@@ -84,3 +84,13 @@ and (-webkit-device-pixel-ratio: 3) {
 .buttonnavigation:hover {
   background-color: rgb(206, 195, 195);
 }
+
+.nr {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.element {
+  margin-bottom: 2rem;
+}

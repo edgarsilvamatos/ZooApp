@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid';
 import '../assets/css/Tickets.css';
 
 const TicketForm = () => {
   const navigate = useNavigate();
 
   const [formFields, setFormFields] = useState({
-    id: '',
     date: '',
     adultsCount: 0,
-    childrenCount: 0,
-    price: 0,
+    childrenCount: 0
   });
 
   const handleInputChange = (key, value) => {
@@ -23,7 +20,6 @@ const TicketForm = () => {
     
     const newTicket = {
       ...formFields,
-      id: uuidv4(),
     };
 
     try {
@@ -40,11 +36,9 @@ const TicketForm = () => {
         alert("Ticket submitted successfully!");
 
         setFormFields({
-          id: '',
           date: '',
           adultsCount: 0,
-          childrenCount: 0,
-          price: 0,
+          childrenCount: 0
         });
         navigate('/parking');
       } else {
@@ -57,7 +51,6 @@ const TicketForm = () => {
     console.log('Ticket submitted:', newTicket);
   };
 
-  
   return (
     <div className="ticketsite">
       <h2>Ticket kaufen:</h2>
@@ -85,12 +78,6 @@ const TicketForm = () => {
         <br></br>
         <br></br>
       </div>
-      <label>Preis:</label>
-      <input className="price"
-        type="number"
-        value={formFields.price}
-        onChange={(e) => handleInputChange('price', e.target.value)}
-      />
       <br></br>
       <button className="buttonnavigation" onClick={handleSubmit}>Kaufen</button>
       <button className="buttonnavigation" onClick={() => navigate('/parking')}>Zurück zu Parking</button>

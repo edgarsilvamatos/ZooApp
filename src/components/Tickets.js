@@ -7,8 +7,8 @@ const TicketForm = () => {
 
   const [formFields, setFormFields] = useState({
     date: '',
-    adultsCount: 0,
-    childrenCount: 0
+    numAdults: 0,
+    numChildren: 0
   });
 
   const handleInputChange = (key, value) => {
@@ -21,13 +21,13 @@ const TicketForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    console.log("Anzahl Kinder:", formFields.childrenCount);
-    console.log("Anzahl Erwachsene:", formFields.adultsCount);
+    console.log("Anzahl Kinder:", formFields.numChildren);
+    console.log("Anzahl Erwachsene:", formFields.numAdults);
 
     const newTicket = {
       date: formFields.date,
-      adultsCount: parseInt(formFields.adultsCount, 10),
-      childrenCount: parseInt(formFields.childrenCount, 10)
+      numAdults: parseInt(formFields.numAdults, 10),
+      numChildren: parseInt(formFields.numChildren, 10)
     };
 
     try {
@@ -45,8 +45,8 @@ const TicketForm = () => {
 
         setFormFields({
           date: '',
-          adultsCount: 0,
-          childrenCount: 0
+          numAdults: 0,
+          numChildren: 0
         });
         navigate('/parking');
       } else {
@@ -73,16 +73,16 @@ const TicketForm = () => {
       <br></br>
       <label>Anzahl Erwachsene:</label>
       <div>
-        <button className="button" onClick={() => handleInputChange('adultsCount', Math.max(0, formFields.adultsCount - 1))} disabled={formFields.adultsCount === 0}>-</button>
-        <span>{formFields.adultsCount}</span>
-        <button className="button" onClick={() => handleInputChange('adultsCount', formFields.adultsCount + 1)}>+</button>
+        <button className="button" onClick={() => handleInputChange('numAdults', Math.max(0, formFields.numAdults - 1))} disabled={formFields.numAdults === 0}>-</button>
+        <span>{formFields.numAdults}</span>
+        <button className="button" onClick={() => handleInputChange('numAdults', formFields.numAdults + 1)}>+</button>
         <br></br>
       </div>
       <label>Anzahl Kinder:</label>
       <div>
-        <button className="button" onClick={() => handleInputChange('childrenCount', Math.max(0, formFields.childrenCount - 1))} disabled={formFields.childrenCount === 0}>-</button>
-        <span>{formFields.childrenCount}</span>
-        <button className="button" onClick={() => handleInputChange('childrenCount', formFields.childrenCount + 1)}>+</button>
+        <button className="button" onClick={() => handleInputChange('numChildren', Math.max(0, formFields.numChildren - 1))} disabled={formFields.numChildren === 0}>-</button>
+        <span>{formFields.numChildren}</span>
+        <button className="button" onClick={() => handleInputChange('numChildren', formFields.numChildren + 1)}>+</button>
         <br></br>
         <br></br>
       </div>

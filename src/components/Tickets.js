@@ -12,12 +12,18 @@ const TicketForm = () => {
   });
 
   const handleInputChange = (key, value) => {
-    setFormFields((prevFields) => ({ ...prevFields, [key]: value }));
+    setFormFields((prevFields) => ({
+      ...prevFields,
+      [key]: key === 'date' ? value : parseInt(value, 10)
+    }));
   };
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     
+    console.log("Anzahl Kinder:", formFields.childrenCount);
+    console.log("Anzahl Erwachsene:", formFields.adultsCount);
+
     const newTicket = {
       date: formFields.date,
       adultsCount: parseInt(formFields.adultsCount, 10),

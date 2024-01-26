@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../assets/css/Tickets.css';
+import zoo1 from '../assets/images/zoo1.jpg';
 
 const TicketForm = () => {
   const navigate = useNavigate();
@@ -89,6 +90,7 @@ const TicketForm = () => {
       <br></br>
       <button className="buttonnavigation" onClick={handleSubmit}>Kaufen</button>
       <button className="buttonnavigation" onClick={() => navigate('/parking')}>Zurück zu Parking</button>
+      <img src= {zoo1} alt="Zoo" className="zoo-image" />    
     </div>
   );
 };
